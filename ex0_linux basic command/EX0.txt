@@ -1,0 +1,53 @@
+#!/bin/bash
+
+echo "Welcome to the Linux Command Line Basics Exercise Script!"
+echo "--------------------------------------------------------"
+echo "This script will guide you through some fundamental Linux operations."
+echo
+
+# Step 1: Navigate to the home directory
+
+# Step 2: Create a new directory called 'practice'
+==> mkdir practice
+
+# Step 3: Create a new file called 'example.txt'
+==> touch example.txt
+
+# Step 4: Create a copy of 'example.txt' named 'copy_example.txt'
+==> cp example.txt copy_example.txt
+
+# Step 5: Rename 'copy_example.txt' to 'renamed_example.txt'
+==> mv copy_example.txt renamed_example.txt
+
+# Step 6: Create a new directory called 'subdir'
+==> mkdir subdir
+
+# Step 7: Move 'renamed_example.txt' into 'subdir'
+==> mv renamed_example.txt subdir
+
+# Step 8: Add the word "Test" inside 'renamed_example.txt'
+==> vi renamed_example.txt -> I -> input ¡°Text¡± ->ESC -> :wq 
+# Step 9: View the content of 'renamed_example.txt'
+==> cat renamed_example.txt
+
+# Step 10: Make 'example.txt' executable
+==> chmod +x renamed_example.txt
+
+# Step 11: Clone the repository at the url: https://github.com/apapiu/transformer_latent_diffusion
+==> git clone https://github.com/apapiu/transformer_latent_diffusion
+# Step 12: Go into the cloned repository and remove the file "readme.MD"
+==> cd transformer_latent_diffusion -> rm README.md
+
+# Step 13: Register at https://sdf.org/ for testing ssh Connection
+
+# Step 14: Connect to the remote server
+	ssh gidong1@tty.sdf.org
+# Step 15: Copy 'copy_example.txt' into the remote server
+
+# Step 16: Copy the folder 'subdir' into the remote server
+w
+# Final Step: Clean up
+
+echo "--------------------------------------------------------"
+echo "Exercise complete! You have successfully performed basic and advanced Linux operations."
+echo "Thank you for participating!"
